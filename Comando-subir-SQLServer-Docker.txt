@@ -1,0 +1,9 @@
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=teste' -p 1433:1433 -d microsoft/mssql-server-linux
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=teste" -p 1433:1433 -d microsoft/mssql-server-linux
+
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=123' -p 1433:1433 -d microsoft/mssql-server-linux
+
+
+
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=12345" -e "MSSQL_PID=Developer" --cap-add SYS_PTRACE -p 1401:1433 -d microsoft/mssql-server-linux
